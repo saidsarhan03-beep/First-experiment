@@ -1,30 +1,11 @@
-import java.util.Scanner;
-import java.util.Random;
-
 public class Main {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        Random random = new Random();
+        String navn = "Said";
+        int alder = 19;
 
-        int number = random.nextInt(10) + 1;
-        int guess = 10;
-
-        System.out.println("Guess a number between 1 and 10");
-
-        while (guess != number) {
-            System.out.print("Your guess: ");
-            guess = scanner.nextInt();
-
-            if (guess < number) {
-                System.out.println("Too low!");
-            } else if (guess > number) {
-                System.out.println("Too high!");
-            } else {
-                System.out.println("Correct! 🎉");
-            }
-        }
-
-        scanner.close();
+        System.out.println("Mit navn er " + navn);
+        System.out.println("Jeg er " + alder + " år gammel");
     }
-}
+ }
+
