@@ -7,10 +7,10 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        int number = random.nextInt(100) + 1;
-        int guess = 0;
+        int number = random.nextInt(10) + 1;
+        int guess = 10;
 
-        System.out.println("Guess a number between 1 and 100");
+        System.out.println("Guess a number between 1 and 10");
 
         while (guess != number) {
             System.out.print("Your guess: ");
